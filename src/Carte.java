@@ -1,10 +1,23 @@
-public class Carte {
-    String nomDeCarte;
+public class Card {
+	
+	private Valeurs valeurs;
+	
+	
+	public Card (Valeurs valeurs) {
+		this.valeurs = valeurs;	
+	}
+	
+	public String toString() {
+		
+		return this.valeurs.toString();
+			
+	}
+	
+	public Valeurs getvaleurs() {
+		return this.valeurs;
+		
+	}
+	
+	
 
-    public void utiliserCarte(){
-        if (nomDeCarte.equals("avancer")) {
-
-
-        }
-    }
 }
